@@ -1,0 +1,46 @@
+﻿<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="图片裁剪">
+  <ion-content class="padding">
+
+   <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            background-color: black;
+            text-align: center;
+        }
+
+        #crop_btn {
+            color: white;
+            background-color: #836FFF;
+            height: 40px;
+            display: inline-block;
+            line-height: 40px;
+            width: 110px;
+            text-align: center;
+            border-radius: 2px;
+        }
+
+        #crop_circle_btn {
+            color: white;
+            background-color: #836FFF;
+            height: 40px;
+            line-height: 40px;
+            width: 110px;
+            text-align: center;
+            border-radius: 2px;
+            display: inline-block;
+            margin-left: 20px;
+        }
+    </style>
+
+     <img src="img/mike.png" style="display: none;">
+    <div id="crop_result" style="text-align: center; padding-top: 30px; height: 230px; line-height: 300px;"></div>
+    <a id="crop_btn">Crop Rect</a>
+    <a id="crop_circle_btn">Crop Circle</a>
+  </ion-content>
+</ion-view>

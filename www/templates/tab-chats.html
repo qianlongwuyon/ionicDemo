@@ -1,0 +1,14 @@
+﻿<ion-view view-title="Chats">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-icon-right" item-click-ripple ng-repeat="chat in chats" type="item-text-wrap"  ng-click="chatd(chat.url)">
+        <h2>{{chat.name}}</h2>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+<span class="item-ripple"></span>
+        <ion-option-button class="button-assertive" ng-click="remove(chat)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

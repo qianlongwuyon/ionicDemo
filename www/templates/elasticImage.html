@@ -1,0 +1,52 @@
+﻿<ion-view view-title="Chats">
+<style type="text/css">
+	
+	.elastic-image {
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-top: 44px;
+		/* Initial image height: */
+		height: 200px;
+	}
+
+	.the-content {
+		/* Same as initial image height: */
+		padding-top: 200px;
+	}
+
+</style>
+	 <ion-header-bar class="bar-positive">
+		<div class="buttons">
+				<button class="button button-icon ion-navicon"></button>
+			</div>
+			<h1 class="title">Elastic image</h1>
+	</ion-header-bar>
+
+	<div id="the-image-id" class="elastic-image" style="background-image: url(img/ben.png)"></div>
+	
+	<ion-content elastic-image="the-image-id" class="padding">
+		<div class="the-content">
+				<h2>Elastic image</h2>
+				<p>This is an experiment with an elastic image in Ionic Framework. Note that this is a quick hack, see it as a proof of concept. If some ionic/angular-guru could refine this into something production ready you are welcome to do so.</p>
+			<p>Note: This implementation works by using a combination of background-size: cover and a variable height. This is not great performance wise. It should be re-written using only GPU-friendly properties (i.e. Translate, Scale) so the browser won't have to re-paint on scroll.</p>
+			<p>It should also be improved by using Request Animation Frame for the animation.</p>
+			<div class="list">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+				<div class="item">5</div>
+				<div class="item">6</div>
+				<div class="item">7</div>
+				<div class="item">8</div>
+				<div class="item">9</div>
+				<div class="item">10</div>
+				<div class="item">12</div>
+				<div class="item">13</div>
+				<div class="item">14</div>
+				<div class="item">15</div>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

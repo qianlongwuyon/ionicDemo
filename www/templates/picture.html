@@ -1,0 +1,10 @@
+﻿<ion-view view-title="Chats">
+  <ion-content>
+  <style type="text/css">
+    img{
+      width: 300px;
+    }
+  </style>
+    <img ng-src="{{allimg.imgsrc}}" ng-repeat="allimg in imgs" ng-click="onDoubleTap($index)">
+  </ion-content>
+</ion-view>
